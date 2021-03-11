@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+{% block content %}
+<br></br>
+<h1>Old tweets</h1>
+{% for tweet in tweets %}
+<div class="card mt-2">
+  <div class="card-body">
+    <div class="card-text">
+    {{ tweet.text }}
+    </div>
+      </div>
+</div>
+{% endfor %}
+
+<h1>Old Reddit posts</h1>
+{% for post in reddit_posts %}
+<div class="card mt-2">
+  <div class="card-body">
+    <div class="card-text">
+    {{ post.text }}
+    </div>
+      </div>
+</div>
+{% endfor %}
+
+{% endblock %}
